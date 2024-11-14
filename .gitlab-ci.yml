@@ -1,0 +1,22 @@
+stages:
+  - deploy
+
+deploy_hom:
+    stage: deploy
+    script:
+        - echo "Deploying to HOM"
+        - docker-compose up --build --force-recreate -d
+    only:
+      - release
+    tags:
+      - PCC-HOM
+
+deploy_prod:
+    stage: deploy
+    script:
+        - echo "Deploying to PROD"
+        - docker-compose up --build --force-recreate -d
+    only:
+      - master
+    tags:
+      - PCC-PROD

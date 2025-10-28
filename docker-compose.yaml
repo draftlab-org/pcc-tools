@@ -7,9 +7,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      #anonymous volume to prevent the `node_modules` existing in container to be overridden.
-      - /usr/src/app/node_modules
-      #   - .:/usr/src/app
+    # volumes:
+    #anonymous volume to prevent the `node_modules` existing in container to be overridden.
+    # - /usr/src/app/node_modules
+    #   - .:/usr/src/app
     ports:
       - "3000:3000"

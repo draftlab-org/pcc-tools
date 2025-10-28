@@ -15,12 +15,3 @@ services:
       #   - .:/usr/src/app
     ports:
       - "3000:3000"
-    networks:
-      - ctl_network
-
-networks:
-  ctl_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 172.16.57.0/24

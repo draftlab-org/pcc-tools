@@ -1,70 +1,65 @@
 {
-  "name": "@platform-coop-toolkit/coop-tool-library",
-  "version": "1.0.0",
-  "description": "Practical tools for co-ops.",
-  "scripts": {
-    "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
-    "start": "node __sapper__/build",
-    "cy:run": "cypress run",
-    "cy:open": "cypress open",
-    "test": "run-p --race dev cy:run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/platform-coop-toolkit/coop-tool-library.git"
-  },
-  "keywords": [
-    "sapper",
-    "svelte-components",
-    "tool-library"
-  ],
-  "author": "OCAD University",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/platform-coop-toolkit/coop-tool-library/issues"
-  },
-  "homepage": "https://github.com/platform-coop-toolkit/coop-tool-library#readme",
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "engines": {
-    "node": ">=12.x"
-  },
-  "dependencies": {
-    "compression": "^1.7.1",
-    "node-fetch": "^2.6.0",
-    "polka": "next",
-    "sirv": "^0.4.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
-    "@babel/plugin-transform-runtime": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "^7.0.0",
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.0.1",
-    "@platform-coop-toolkit/pinecone": "^1.0.0-beta.3",
-    "@rollup/plugin-commonjs": "11.0.2",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "@rollup/plugin-replace": "^2.2.0",
-    "autoprefixer": "^9.7.6",
-    "cypress": "^4.11.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.2",
-    "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5",
-    "rollup": "^2.0.0",
-    "rollup-plugin-babel": "^4.0.2",
-    "rollup-plugin-svelte": "^5.0.1",
-    "rollup-plugin-terser": "^5.3.0",
-    "sapper": "^0.27.0",
-    "slugify": "^1.4.0",
-    "svelte": "^3.0.0",
-    "svelte-preprocess": "^3.7.4"
-  }
+	"name": "@platform-coop-toolkit/coop-tool-library",
+	"version": "1.0.0",
+	"description": "Practical tools for co-ops.",
+	"scripts": {
+		"dev": "sapper dev",
+		"build": "sapper build --legacy",
+		"export": "sapper export --legacy",
+		"start": "node __sapper__/build",
+		"cy:run": "cypress run",
+		"cy:open": "cypress open",
+		"test": "run-p --race dev cy:run"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/platform-coop-toolkit/coop-tool-library.git"
+	},
+	"keywords": [
+		"sapper",
+		"svelte-components",
+		"tool-library"
+	],
+	"author": "OCAD University",
+	"license": "BSD-3-Clause",
+	"bugs": {
+		"url": "https://github.com/platform-coop-toolkit/coop-tool-library/issues"
+	},
+	"homepage": "https://github.com/platform-coop-toolkit/coop-tool-library#readme",
+	"engines": {
+		"node": ">=12.x"
+	},
+	"dependencies": {
+		"compression": "^1.7.1",
+		"node-fetch": "^2.6.0",
+		"polka": "next",
+		"sirv": "^0.4.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.0.0",
+		"@babel/plugin-syntax-dynamic-import": "^7.0.0",
+		"@babel/plugin-transform-runtime": "^7.0.0",
+		"@babel/preset-env": "^7.0.0",
+		"@babel/runtime": "^7.0.0",
+		"@commitlint/cli": "^9.1.2",
+		"@commitlint/config-conventional": "^9.0.1",
+		"@platform-coop-toolkit/pinecone": "^1.0.0-beta.3",
+		"@rollup/plugin-commonjs": "11.0.2",
+		"@rollup/plugin-node-resolve": "^7.0.0",
+		"@rollup/plugin-replace": "^2.2.0",
+		"autoprefixer": "^9.7.6",
+		"cypress": "^4.11.0",
+		"husky": "^4.2.5",
+		"lint-staged": "^10.2.2",
+		"node-sass": "^4.14.1",
+		"npm-run-all": "^4.1.5",
+		"rollup": "^2.0.0",
+		"rollup-plugin-babel": "^4.0.2",
+		"rollup-plugin-svelte": "^5.0.1",
+		"rollup-plugin-terser": "^5.3.0",
+		"sapper": "^0.27.0",
+		"slugify": "^1.4.0",
+		"svelte": "^3.0.0",
+		"svelte-preprocess": "^3.7.4"
+	}
 }

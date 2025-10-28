@@ -10,7 +10,6 @@ export async function get(req, res, next) {
 	await fetch(appConfig.directoryUrls.toolsApi)
 		.then((result) => result.json())
 		.then((json) => {
-			console.log(json[0]);
 			tools = json.map(processTools).sort(function (a, b) {
 				return sortByObjectKey(a, b, "name");
 			});

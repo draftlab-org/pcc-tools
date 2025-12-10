@@ -1,4 +1,4 @@
-const DIRECTORY_URL = "https://directory.pcc.draftlab.dev";
+const DIRECTORY_URL = "https://directory.platform.coop";
 const DIRECTORY_API_URL = DIRECTORY_URL + "/api";
 const DIRECTORY_API_TOOLS_URL = DIRECTORY_API_URL + "/tools";
 
